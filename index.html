@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tarian Tradisional Malaysia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <section id="splash" class="view">
+      <h1 id="splash-title" aria-live="polite"></h1>
+    </section>
+
+    <section id="login" class="view hidden">
+      <h2>Welcome</h2>
+      <label>
+        Username
+        <input id="username" type="text" placeholder="Nama / Username" />
+      </label>
+      <label>
+        Language
+        <select id="language">
+          <option value="ms">Bahasa Melayu</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+      <button id="nextBtn" class="primary">Next</button>
+    </section>
+
+    <section id="main" class="view hidden">
+      <h2 id="welcomeText"></h2>
+      <div id="danceList" class="grid"></div>
+      <button id="logoutBtn" class="secondary">Logout</button>
+    </section>
+
+    <section id="detail" class="view hidden">
+      <button id="backBtn" class="secondary">Back</button>
+      <h2 id="danceName"></h2>
+      <ul id="danceMeta"></ul>
+      <p id="danceDesc"></p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

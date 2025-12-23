@@ -1,0 +1,22 @@
+:root{
+  --bg:#fffdfa;
+  --primary:#2b7a78;
+  --accent:#f08a5d;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:#0b0b0b;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center}
+#app{width:100%;max-width:720px;padding:20px}
+.view{padding:24px;border-radius:12px;background:linear-gradient(180deg,#ffffff, #f7f7f5);box-shadow:0 6px 20px rgba(10,10,10,0.06)}
+.hidden{display:none}
+h1,h2{margin:0 0 16px}
+#splash{display:flex;align-items:center;justify-content:center;height:180px}
+#splash-title{font-size:28px;letter-spacing:2px;color:var(--primary)}
+label{display:block;margin:10px 0;color:var(--muted)}
+input,select{display:block;width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-top:6px}
+.primary{background:var(--primary);color:white;padding:10px 14px;border-radius:8px;border:0;margin-top:12px}
+.secondary{background:transparent;border:1px solid #ddd;padding:8px 12px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.danceBtn{padding:18px;border-radius:10px;border:1px solid #eee;background:#fff;cursor:pointer;font-weight:600}
+#danceDesc{margin-top:12px}
+@media (max-width:460px){.grid{grid-template-columns:repeat(1,1fr)}#app{padding:12px}}
